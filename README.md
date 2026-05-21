@@ -1,25 +1,15 @@
 # SFM Reconstruction
 
-Computer vision project implementing Structure-from-Motion on public multi-view data.
-
-It reconstructs sparse 3D structure and relative camera motion from public multi-view data. The core math is implemented in Python with NumPy/SciPy, while OpenCV is optional for feature extraction on arbitrary image pairs.
+Computer vision project implementing Structure-from-Motion on public multi-view data using Python/NumPy/SciPy. OpenCV is optional for feature extraction on arbitrary image pairs.
 
 ## What It Includes
 
-- Oxford VGG Dinosaur public dataset integration
-- Multi-view track fusion across several frames
-- Normalized eight-point fundamental matrix estimation
-- RANSAC epipolar outlier rejection
-- Essential matrix decomposition
-- Cheirality-based pose selection
-- Linear triangulation
-- Two-view bundle adjustment
-- Reprojection, depth, and statistical outlier filtering
-- Reprojection-error evaluation
-- Colored sparse point-cloud export to PLY
-- Dense two-view stereo point-cloud export to PLY
-- Track overlay images for visual inspection
-- Optional image-pair reconstruction with OpenCV SIFT/ORB
+- Oxford VGG Dinosaur dataset integration
+- Epipolar geometry estimation with RANSAC (eight-point + essential matrix)
+- Relative camera pose recovery and linear triangulation
+- Two-view bundle adjustment and outlier filtering
+- Sparse and dense colored point-cloud export to PLY
+- Multi-view track fusion across adjacent view pairs
 
 ## Setup
 
