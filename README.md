@@ -24,7 +24,7 @@ It reconstructs sparse 3D structure and relative camera motion from public multi
 ## Setup
 
 ```powershell
-cd C:\Users\Puneet\.gemini\antigravity\scratch\SFM
+cd D:\Projects\sfm-reconstruction
 python -m pip install -r requirements.txt
 ```
 
