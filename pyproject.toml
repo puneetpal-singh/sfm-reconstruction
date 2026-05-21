@@ -1,0 +1,22 @@
+[project]
+name = "sfm-reconstruction"
+version = "0.1.0"
+description = "A Structure-from-Motion reconstruction pipeline for public multi-view data."
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=2.0",
+  "scipy>=1.12"
+]
+
+[project.optional-dependencies]
+image = [
+  "opencv-python>=4.9"
+]
+viz = [
+  "matplotlib>=3.8"
+]
+dev = [
+]
+
+[project.scripts]
+sfm-reconstruction = "sfm.cli:main"
